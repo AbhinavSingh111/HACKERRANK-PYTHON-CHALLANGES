@@ -1,0 +1,3 @@
+v=input().split()
+x=int(v[0])
+print(eval(input())==int(v[1]))
