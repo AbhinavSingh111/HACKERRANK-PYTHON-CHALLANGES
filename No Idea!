@@ -1,0 +1,11 @@
+n,m=map(int,input().split())
+arr=list(map(int,input().split()))
+a=set(map(int,input().split()))
+b=set(map(int,input().split()))
+ih=0
+for i in arr:
+    if i in a:
+        ih+=1
+    if i in b:
+        ih-=1
+print(ih)
