@@ -1,0 +1,9 @@
+n=int(input())
+stamp = set()
+for _ in range(n):
+    stamp.add(input())
+print(len(stamp))
+
+#one line solution
+
+print(len(set([input()for i in range(int(input()))])))
