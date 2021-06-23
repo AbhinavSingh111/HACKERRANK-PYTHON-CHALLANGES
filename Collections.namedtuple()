@@ -1,0 +1,10 @@
+from collections import namedtuple
+n=int(input())
+columns=input().split()
+total=0
+for i in range(n):
+    students=namedtuple('students',columns)
+    detail1,detail2,detail3,detail4=input().split()
+    students=students(detail1,detail2,detail3,detail4)
+    total+=int(students.MARKS)
+print(students)
