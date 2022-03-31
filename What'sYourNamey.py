@@ -15,3 +15,11 @@ if __name__ == '__main__':
     first_name = input()
     last_name = input()
     print_full_name(first_name, last_name)
+    
+#     #     or this approach is also apt
+def print_full_name(first, last):
+    # Write your code hereans
+    ans= "Hello "+first+" "+last+"!"+" "+"You just delved into python."
+    print(ans)
+
+if __name__ == '__main__':
