@@ -20,3 +20,6 @@ def miniMaxSum(arr):
     
 #     2 liner , easy and simple python approach:
 
+def miniMaxSum(arr):
+    ans = [sum(arr)-i for i in arr]
+    print(min(ans),max(ans))
