@@ -19,7 +19,10 @@ def miniMaxSum(arr):
     print(int(minimum_sum) , int(maximum_sum))
     
 #     2 liner , easy and simple python approach:
-
 def miniMaxSum(arr):
     ans = [sum(arr)-i for i in arr]
     print(min(ans),max(ans))
+    
+# 1 liner
+def miniMaxSum(arr):
+   print(sum(arr)-max(arr),sum(arr)-min(arr))
