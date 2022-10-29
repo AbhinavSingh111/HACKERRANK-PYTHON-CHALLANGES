@@ -2,16 +2,31 @@ import math
 
 class Complex(object):
     def __init__(self, real, imaginary):
+        self.real = real
+        self.imaginary = imaginary
         
     def __add__(self, no):
+        r = self.real + no.real
+        i = self.imaginary + no.imaginary
+        return Complex(r , i)
         
     def __sub__(self, no):
+        r = self.real - no.real
+        i = self.imaginary - no.imaginary
+        return Complex(r , i)       
         
     def __mul__(self, no):
+        prod = complex(self.real , self.imaginary)*complex(no.real , no.imaginary)
+        return Complex(prod.real , prod.imag)
 
     def __truediv__(self, no):
+        div = complex(self.real , self.imaginary)/complex(no.real , no.imaginary)
+        return Complex(div.real , div.imag)
+
 
     def mod(self):
+        m = math.sqrt(self.real**2 + self.imaginary**2)
+        return Complex(m,0)
 
     def __str__(self):
         if self.imaginary == 0:
